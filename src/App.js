@@ -15,6 +15,9 @@ class  App extends Component {
       genres:null
     }
   }
+  componentDidMount() {
+    document.title = 'Music-Genre Analysis';
+  }
 
    // Changing the state of the file 
 
@@ -36,6 +39,7 @@ class  App extends Component {
     axios.post(" http://127.0.0.1:5000/uploadfile",formData)
     .then(res=>this.setState({genres:res.data.music_prediction}));
   }
+
   render(){
     return (
       <div className="App">
