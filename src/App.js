@@ -35,8 +35,7 @@ class  App extends Component {
     formData.append('file_name',this.state.selectedFile.name);
 
     // Post Request 
-
-    axios.post(" http://127.0.0.1:5000/uploadfile",formData)
+    axios.post("https://music-genre-flask.herokuapp.com/uploadfile",formData)
     .then(res=>this.setState({genres:res.data.music_prediction}));
   }
 

@@ -16,7 +16,7 @@ const Analysis=({genres})=>{
 		<div className='container'>
 			<h1>Music Genre Analysis</h1>
 			<p>(Swipe down to see more)</p>
-			<h3>Blues:{genres[1]}%</h3>
+			<h3>Blues:{genres[0]}%</h3>
 			<h3>Classical:{genres[1]}%</h3>
 			<h3>Country:{genres[2]}%</h3>
 			<h3>Disco:{genres[3]}%</h3>
