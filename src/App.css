@@ -1,0 +1,14 @@
+.center{
+  display:flex;
+  justify-content:center;
+}
+.particle-canvas {
+    position:fixed;
+    left:0;
+    right:0;
+    bottom:0;
+    top:0;
+    z-index:-1; 
+}
+/* z-index is a property which is mentioned so that the particles does not overlap with
+other contents like Logo and ImageLinkForm.*/
